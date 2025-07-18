@@ -1,3 +1,4 @@
+#write a program to check that place found or not
 name=input("Enter the place name: ")
 if(name=="katihar"):
     print("Found Katihar")
