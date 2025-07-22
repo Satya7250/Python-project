@@ -44,6 +44,4 @@ while (j <= k):
     elif (j % 2 != 0):
         print("Odd: ",j)
     j += 1
-
-     
-
+    
