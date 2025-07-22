@@ -23,7 +23,7 @@ if(1 <= num <= 12):
         print("October")
     elif(num==11):
         print("November")
-    elif(num==12):
+    else:
         print("December")
 else:
     print("You Enter Invalid number")
