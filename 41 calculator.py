@@ -8,8 +8,10 @@ def multiply(x,y):
 def divide(x,y):
    return x/y
 
-a= float(input("Enter the 1st value: "))
-b= float(input("Enter the 2nd value: "))
+def takeInput():
+    a= float(input("Enter the 1st value: "))
+    b= float(input("Enter the 2nd value: "))
+    return a,b
 
 print("press 1 for +")
 print("press 2 for -")
@@ -24,12 +26,16 @@ while(x!=0):
         print("Program is exiting...!")
         x=0
     elif(userInput==1):
+        a,b=takeInput()
         print(sum(a,b))
     elif(userInput==2):
+        a,b=takeInput()
         print(subtract(a,b))
     elif(userInput==3):
+        a,b=takeInput()
         print(multiply(a,b))
     elif(userInput==4):
+        a,b=takeInput()
         if(b!=0):
             print(divide(a,b))
         else:
