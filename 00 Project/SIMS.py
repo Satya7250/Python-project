@@ -65,6 +65,17 @@ def fetchDetails():
         print("No student found with this roll number.")
 
 
+def searchByBranch():
+    branch = input("Enter the branch: ").strip().lower()
+    l3 = 0
+    for roll, info in students.items():
+        if info['Branch'].lower() == branch:
+            print(f"Roll:{roll}, Name:{info['Name']}")
+            l3 = 1
+    if not l3:
+        print("No Data found of this Branch")
+
+
 def updateDetails():
     nRoll = input("Enter Roll of Student: ")
     if nRoll in students:
@@ -119,11 +130,22 @@ def updateDetails():
                 print("Academic History updated.")
             else:
                print("Invalid choice. Try again.")
+
+
+def compareAcademic():
+    rollOne = input("Enter rollOne").strip()
+    rollTwo = input("Enter rollTwo").strip()
+    if rollOne and rollTwo in students:
+
+
+
 l=1
 print("Press 1 for Add Student Details: ")
 print("Press 2 for Display allDetails: ")
 print("Press 3 for Fetch Details")
 print("Press 4 for Update Details")
+print("Press 5 for Search By Branch")
+print("Press 6 for compare by CGPA")
 print("Press 0 for Exit...!")
 
 while(l):
@@ -142,4 +164,8 @@ while(l):
         fetchDetails()
     elif(choice == '4'):
         updateDetails()
+    elif(choice == '5'):
+        searchByBranch()
+    elif(choice == '6'):
+        compareAcademic()
     
