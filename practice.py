@@ -166,3 +166,121 @@
 #     unique_item.add(i)
 
 '''18th problem'''
+# num = 4
+# def sum(num=5):
+#     return num**2
+# square = sum(num)
+# print(square)
+
+'''19th problem'''
+# a=10
+# b=20
+# def sum(a,b):
+#     return a+b
+# result = sum(a,b)
+# print(result)
+
+'''20th problem'''
+# def multiply(a,b):
+#     return a*b
+# print(multiply("h",3))
+
+'''21th problem'''
+# import math
+# def area_curm(radius):
+#     area = (radius**2)*math.pi
+#     curm = 2*math.pi*radius
+#     return area,curm
+# a,c = area_curm(5)
+# print(a)
+# print(c)
+
+'''22th problem'''
+# user = "satya"
+# def greet(name="user"):
+#     return "hello " + name
+# print(greet(user))
+
+'''23th problem'''
+# cube = lambda x: x**3
+# print(cube(3))
+
+'''24th problem'''
+# total = 0
+# def sum_all(*args):
+#     return sum(args)
+# print(sum_all(1,2,3,4,5,6,7,8,9,10))
+# print(sum_all(2,3))
+
+'''25th problem'''
+# chai = "lemon chai"
+# print(chai[::-1])
+# print(chai[1])
+# print(chai[0:5])
+# print(chai[:])
+
+# rev=""
+# for i in chai:
+#     rev = i+rev
+# if rev == chai:
+#     print("palandrom")
+# else:
+#     print("not palandrome")
+
+# num_list = "0123456789"
+# print(num_list[:])
+# print(num_list[-5:])
+# print(num_list[0:7:2])
+# print(num_list[0:7:3])
+
+# string = " Satya"
+# print(string.lower())
+# print(string.upper())
+# print(string.strip())
+# print(string.replace("S","O"))
+
+# chai="Lemon,Satya,Monika,Satya"
+# print(chai.split(", "))
+# print(chai.find("Satya"))
+# print(chai.count("Satya"))
+
+'''26th Problem'''
+chai_types = {'masala':"spicy","Ginger": "zesty","Green": "Fresh"}
+# for chai in chai_types:
+#     print(chai,chai_types[chai])
+
+# for key,value in chai_types.items():
+#     print(key,value)
+
+# chai_types['Earl Grey']= 'Citrus'
+# print(chai_types)
+# print(chai_types.pop('Green'))
+
+# del chai_types['Green']
+# print(chai_types)
+
+# chai_types_copy = chai_types.copy()
+# print(chai_types_copy)
+
+
+# tea_shop ={
+#     "chai":{"Masala":"spicy","Green":"Zesty"},
+#     "name":{100:"Satya","200":"Prakash"}
+# }
+
+# print(tea_shop['chai']['Green'])
+
+# squared_num = {x:x**2 for x in range(1,6)}
+# print(squared_num)
+
+
+# keys = ["Masala","Ginger","Lemon"]
+# default_value = "Delicious"
+# new_dict = dict.fromkeys(keys,default_value)
+# print(new_dict)
+
+'''27th problem'''
+tea_types = ('black','green','oolang')
+new = (1,2,3,4)
+all_item = tea_types+new
+print(all_item)
